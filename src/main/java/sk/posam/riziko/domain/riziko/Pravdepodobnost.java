@@ -1,4 +1,4 @@
-package sk.posam.riziko.domain;
+package sk.posam.riziko.domain.riziko;
 
 public enum Pravdepodobnost {
 

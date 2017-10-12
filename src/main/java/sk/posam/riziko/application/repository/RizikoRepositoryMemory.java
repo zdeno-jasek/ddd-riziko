@@ -6,8 +6,8 @@ import java.util.Collections;
 
 import org.springframework.stereotype.Repository;
 
-import sk.posam.riziko.domain.Riziko;
-import sk.posam.riziko.domain.RizikoRepository;
+import sk.posam.riziko.domain.riziko.Riziko;
+import sk.posam.riziko.domain.riziko.RizikoRepository;
 
 @Repository
 final class RizikoRepositoryMemory implements RizikoRepository {
@@ -20,7 +20,7 @@ final class RizikoRepositoryMemory implements RizikoRepository {
 	}
 
 	@Override
-	public Collection<Riziko> getAll() {
+	public Collection<Riziko> readAll() {
 		return Collections.unmodifiableCollection( zoznamRizik );
 	}
 

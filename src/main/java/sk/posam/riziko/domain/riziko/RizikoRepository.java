@@ -1,8 +1,8 @@
-package sk.posam.riziko.domain;
+package sk.posam.riziko.domain.riziko;
 
 import java.util.Collection;
 
 public interface RizikoRepository {
 
-	Collection<Riziko> getAll();
+	Collection<Riziko> readAll();
 }
