@@ -14,44 +14,30 @@ public final class Riziko {
 		this.nazov = nazov;
 	}
 
-	public String getNazov() {
-		return nazov;
+	public Riziko(String nazov, Pravdepodobnost pravdepodobnost, Dopad dopad ) {
+		this.nazov = nazov;
+		this.pravdepodobnost = pravdepodobnost;
+		this.dopad = dopad;
 	}
 
-	public void setNazov(String nazov) {
-		this.nazov = nazov;
+	public String getNazov() {
+		return nazov;
 	}
 
 	public String getPopis() {
 		return popis;
 	}
 
-	public void setPopis(String popis) {
-		this.popis = popis;
-	}
-
 	public Pravdepodobnost getPravdepodobnost() {
 		return pravdepodobnost;
-	}
-
-	public void setPravdepodobnost(Pravdepodobnost pravdepodobnost) {
-		this.pravdepodobnost = pravdepodobnost;
 	}
 
 	public Dopad getDopad() {
 		return dopad;
 	}
 
-	public void setDopad(Dopad dopad) {
-		this.dopad = dopad;
-	}
-
 	public String getEliminacia() {
 		return eliminacia;
 	}
 
-	public void setEliminacia(String eliminacia) {
-		this.eliminacia = eliminacia;
-	}
-	
 }
