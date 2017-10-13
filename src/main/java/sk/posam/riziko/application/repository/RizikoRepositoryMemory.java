@@ -7,6 +7,7 @@ import java.util.Collections;
 import org.springframework.stereotype.Repository;
 
 import sk.posam.riziko.domain.riziko.Dopad;
+import sk.posam.riziko.domain.riziko.HodnotenieCiselnikmi;
 import sk.posam.riziko.domain.riziko.Pravdepodobnost;
 import sk.posam.riziko.domain.riziko.Riziko;
 import sk.posam.riziko.domain.riziko.RizikoRepository;
@@ -17,8 +18,8 @@ final class RizikoRepositoryMemory implements RizikoRepository {
 	private static final Collection<Riziko> zoznamRizik = new ArrayList<>();
 	
 	static {
-		zoznamRizik.add( new Riziko( "spadne strecha", Pravdepodobnost.VYSOKA, Dopad.MALY ) );
-		zoznamRizik.add( new Riziko( "vybuchne sopka", Pravdepodobnost.NIZKA, Dopad.VELKY ) );
+		zoznamRizik.add( new Riziko( "spadne strecha", new HodnotenieCiselnikmi( Pravdepodobnost.VYSOKA, Dopad.MALY ) ) );
+		zoznamRizik.add( new Riziko( "vybuchne sopka", new HodnotenieCiselnikmi( Pravdepodobnost.NIZKA, Dopad.VELKY ) ) );
 	}
 
 	@Override

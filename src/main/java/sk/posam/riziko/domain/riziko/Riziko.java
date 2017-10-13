@@ -5,8 +5,7 @@ public final class Riziko {
 	private String nazov;
 	private String popis;
 	
-	private Pravdepodobnost pravdepodobnost;
-	private Dopad dopad;
+	private Hodnotenie hodnotenie;
 	
 	private String eliminacia;
 
@@ -14,10 +13,9 @@ public final class Riziko {
 		this.nazov = nazov;
 	}
 
-	public Riziko(String nazov, Pravdepodobnost pravdepodobnost, Dopad dopad ) {
+	public Riziko(String nazov, Hodnotenie hodnotenie ) {
 		this.nazov = nazov;
-		this.pravdepodobnost = pravdepodobnost;
-		this.dopad = dopad;
+		this.hodnotenie = hodnotenie;
 	}
 
 	public String getNazov() {
@@ -28,16 +26,12 @@ public final class Riziko {
 		return popis;
 	}
 
-	public Pravdepodobnost getPravdepodobnost() {
-		return pravdepodobnost;
-	}
-
-	public Dopad getDopad() {
-		return dopad;
-	}
-
 	public String getEliminacia() {
 		return eliminacia;
+	}
+
+	public Hodnotenie getHodnotenie() {
+		return hodnotenie;
 	}
 
 }
