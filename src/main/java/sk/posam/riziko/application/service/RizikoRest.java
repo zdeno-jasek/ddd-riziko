@@ -17,8 +17,16 @@ public class RizikoRest {
 	@Autowired
 	private RizikoRepository rizikoRepository;
 
+	// http://localhost:8080/riziko
 	@RequestMapping(method=RequestMethod.GET)
 	public Collection<Riziko> getZoznamRizik() {
 		return rizikoRepository.readAll();
+	}
+	
+	// http://localhost:8080/riziko/miera?nazov=vybuchne%20sopka
+	@RequestMapping(method=RequestMethod.GET, value="/miera")
+	public String getMieraRizika( String nazov ) {
+		// TODO Implementovat algoritmus na vypocet miery rizika
+		return "Nemame";
 	}
 }
